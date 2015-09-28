@@ -1,0 +1,30 @@
+{
+  "name": "tiy-github",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "mocha",
+    "bs": "browser-sync start --server --directory --files='*.html, js/*.js, css/*.css'",
+    "sass": "node-sass --output-style expanded  src/scss/main.scss src/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drumslayert/TIY-GitHub.git"
+  },
+  "author": "Terry Calhoun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/drumslayert/TIY-GitHub/issues"
+  },
+  "homepage": "https://github.com/drumslayert/TIY-GitHub#readme",
+  "devDependencies": {
+    "browser-sync": "^2.9.6",
+    "chai": "^3.3.0",
+    "mocha": "^2.3.3",
+    "node-sass": "^3.3.3"
+  }
+}

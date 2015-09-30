@@ -1,3 +1,74 @@
-p {
-  color:blue;
+.container {
+  width: 90%;
+  height: 700px;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: 1px black solid;
+  font-family: sans-serif;
+
+  .sidebar-colomn {
+    margin-top: 40px;
+    margin-left: 100px;
+    width: 275px;
+    height:500px;
+    padding: 2px;
+    border: 2px red solid;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 12px;
+      div {
+        margin-left: 22px;
+        margin-top: 10px;
+        border-radius: 6px;
+        display: block;
+      }
+      span {
+        text-align: left;
+      }
+      p {
+        font-size: 18pt;
+        font-weight: 700;
+        color: blue;
+        letter-spacing: 5px;
+        margin-left: 20px;
+        padding-bottom: 10px;
+      }
+      .fullname {
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 20px;
+      }
+      .username {
+        display: block;
+        font-size: 16px;
+        color: grey;
+        margin-left: 20px;
+
+      }
+      .details {
+        font-size: 14px;
+        list-style: none;
+        padding:1px;
+        padding-top: 7px;
+      }
+      .p-details {
+        border-top: 1px lightgrey solid;
+        border-bottom: 1px lightgrey solid;
+        padding-bottom: 5px;
+      }
+
+  }
+
+     .main-column {
+        border: 2px green solid;
+        width: 700px;
+        height: 300px;
+        float: right;
+        margin-right: 100px;
+        margin-top: 200px;
+
+      }
+
+
 }

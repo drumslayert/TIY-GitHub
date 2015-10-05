@@ -18,3 +18,4 @@ $.getJSON( "octocat.json", function( json ) {
 // $.ajax('../api/github/users/octocat.json').then(function(data){
 //   console.log(arguments);
 // });
+//help

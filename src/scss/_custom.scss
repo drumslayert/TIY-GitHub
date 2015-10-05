@@ -57,18 +57,21 @@
         border-bottom: 1px lightgrey solid;
         padding-bottom: 5px;
       }
-
   }
 
      .main-column {
         border: 2px green solid;
+
         width: 700px;
         height: 300px;
         float: right;
         margin-right: 100px;
         margin-top: 200px;
 
-      }
+        width: 100px;
+        height: 100px;
+        float: right;
+     }
 
 
 }

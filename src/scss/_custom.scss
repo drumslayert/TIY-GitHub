@@ -1,3 +1,10 @@
+header {
+ border: 1px black solid;
+ width: 90%;
+ height: 75px;
+}
+
+
 .container {
   width: 90%;
   height: 700px;
@@ -6,6 +13,12 @@
   border: 1px black solid;
   font-family: sans-serif;
 
+  .nav {
+    float: right;
+    margin-right: 300px;
+    margin-top: 50px;
+    
+  }
   .sidebar-colomn {
     margin-top: 40px;
     margin-left: 100px;

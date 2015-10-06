@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
     </head>
     <body>
@@ -26,11 +27,6 @@
        </header>
 
        <section class="container">
-         <nav class="nav" data-pjax role="navigation">
-              <a href="https://github.com/octocat" class="contributions"><span class="octicon octicon-diff-added"></span>Contributions</a>
-              <a href="https://github.com/octocat?tab=repositories" class="repo"><span class="octicon octicon-repo"></span>Repositories</a>
-              <a href="https://github.com/octocat?tab=activity" class="activity"><span class="octicon octicon-rss"></span>Public activity</a>
-         </nav>
          <section class="sidebar-colomn">
            <div>
            <img src="https://avatars1.githubusercontent.com/u/583231?v=3&s=460" width="230px" height="230px">
@@ -48,10 +44,26 @@
              <p>1.1k  2  6</p>
           <div>
          </section>
+
+         <section id="tabs">
+             <ul>
+                  <li id="#tabs1"><span class="octicon octicon-diff-added"></span>Contributions
+                   <p>test</p>
+                  </li>
+                  <li id="#tabs2"><span class="octicon octicon-repo"></span>Repositories
+                   <p>test</p>
+                  </li>
+                  <li id="#tabs3"><span class="octicon octicon-rss"></span>Public activity
+                   <p>test</p>
+                  </li>
+             </ul>
+        </section>
          <section class="main-column">
+
          </section>
        </section>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>

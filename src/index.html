@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
     </head>
     <body>
@@ -22,28 +23,47 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
+       <header>
+       </header>
+
        <section class="container">
          <section class="sidebar-colomn">
            <div>
            <img src="https://avatars1.githubusercontent.com/u/583231?v=3&s=460" width="230px" height="230px">
            </div>
-           <span class="fullname" itemprop="name">The Octocat</span>
-           <span class="username" itemprop="plus-username">octocat</span>
+           <span class="fullname" itemprop="name">{{name}}</span>
+           <span class="username" itemprop="plus-username">{{login}}</span>
            <ul class="p-details">
-            <li class="details"><span class="octicon octicon-organization"></span>GitHub</li>
-            <li class="details"><span class="octicon octicon-location "></span>San Francisco</li>
-            <li class="details"><span class="octicon octicon-mail"></span>octocat@github.com</li>
-            <li class="details"><span class="octicon octicon-link"></span><a>http://www.github.com/blog</a></li>
-            <li class="details"><span class="octicon octicon-clock"></span>Joined on Jan 25, 2011</li>
+            <li class="details"><span class="octicon octicon-organization"></span>{{company}}</li>
+            <li class="details"><span class="octicon octicon-location "></span>{{location}}</li>
+            <li class="details"><span class="octicon octicon-mail"></span>{{email}}</li>
+            <li class="details"><span class="octicon octicon-link"></span><a>{{blog}}</a></li>
+            <li class="details"><span class="octicon octicon-clock"></span>{{created_at}}</li>
           </ul>
            <div class="stats">
              <p>1.1k  2  6</p>
           <div>
          </section>
+
+         <section id="tabs">
+             <ul>
+                  <li id="#tabs1"><span class="octicon octicon-diff-added"></span>Contributions
+                   <p>test</p>
+                  </li>
+                  <li id="#tabs2"><span class="octicon octicon-repo"></span>Repositories
+                   <p>test</p>
+                  </li>
+                  <li id="#tabs3"><span class="octicon octicon-rss"></span>Public activity
+                   <p>test</p>
+                  </li>
+             </ul>
+        </section>
          <section class="main-column">
+
          </section>
        </section>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>

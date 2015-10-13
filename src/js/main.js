@@ -1,26 +1,6 @@
 
 // alert("Im working");
 
-//http://api.jquery.com/jquery.getjson/
-
-//
-// $.getJSON( "octocat.json", function() {
-//   console.log( "success" );
-// })
-
-// $('#tabs').on('click', function() {
-//   var active_button = $('.tabs li a.active');
-// });
-//
-
-
-// $(document).ready(function(){
-//   $("li p").hide();
-//   $("li").css({"cursor":"pointer"});
-//   $(this).on('click',function(){
-//      $("p").slideToggle();
-//   });
-// });
 
 
 $("li p").hide();
@@ -30,11 +10,25 @@ $('li').click(function(e){
      $(this).children().slideToggle();
     }
 });
-// $.getJSON( "octocat.json", function( json ) {
-//   console.log( "JSON Data: " + json.users[ 3 ].name );
-//  });
+
 //
-//
-// $.ajax('../api/github/users/octocat.json').then(function(data){
-//   console.log(arguments);
+// $.getJSON("../apis/github/users/drumslayert/drumslayert.json", function(data) {
+// console.log('im here');
+//   var items = [];
+//   $.each(data, function(key, val) {
+//     items.push("<span fullname='" + key + "'>" + val + "</span>");
+//   });
 // });
+
+
+  $.getJSON('../../apis/github/users/drumslayert/drumslayert.json', function(data) {
+     $('.fullname').html('<span>' + data.name + '</span>'); //success!!!!
+     $('.username').html('<span>' + data.login + '</span>');
+     $('.details').html('<li>' + data.company + '</li>');
+     $('.location').html('<li>' + data.location + '</li>');
+     $('.email').html('<li>' + data.email + '</li>');
+     $('.blog').html('<li>' + data.blog + '</li>');
+     $('.created').html('<li>' + data.created_at + '</li>');
+});
+
+// http://www.tutorialspoint.com/jquery/ajax-jquery-getjson.htm

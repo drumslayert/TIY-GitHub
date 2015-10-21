@@ -26,44 +26,50 @@
        <header>
        </header>
 
-       <section class="container">
+       <section class="container" ng-app="Github-module">
          <section class="sidebar-colomn">
            <div>
            <img src="https://avatars1.githubusercontent.com/u/583231?v=3&s=460" width="230px" height="230px">
            </div>
-           <span class="fullname" itemprop="name">{{name}}</span>
-           <span class="username" itemprop="plus-username">{{login}}</span>
+           <span class="fullname" itemprop="name">{{user.name}}</span>
+           <span class="username" itemprop="username">{{user.login}}</span>
            <ul class="p-details">
-            <li class="details"><span class="octicon octicon-organization"></span>{{company}}</li>
-            <li class="details"><span class="octicon octicon-location "></span>{{location}}</li>
-            <li class="details"><span class="octicon octicon-mail"></span>{{email}}</li>
-            <li class="details"><span class="octicon octicon-link"></span><a>{{blog}}</a></li>
-            <li class="details"><span class="octicon octicon-clock"></span>{{created_at}}</li>
+            <li class="details"><span class="octicon octicon-organization"></span>{{user.company}}</li>
+            <li class="details"><span class="octicon octicon-location "></span>{{user.location}}</li>
+            <li class="details"><span class="octicon octicon-mail"></span>{{user.email}}</li>
+            <li class="details"><span class="octicon octicon-link"></span><a>{{user.blog}}</a></li>
+            <li class="details"><span class="octicon octicon-clock"></span>{{user.created_at}}</li>
           </ul>
            <div class="stats">
              <p>1.1k  2  6</p>
           <div>
          </section>
 
-         <section id="tabs">
-             <ul>
-                  <li id="#tabs1"><span class="octicon octicon-diff-added"></span>Contributions
-                   <p>test</p>
+             <ul class="tabs">
+                  <li>
+                    <a class="button active" href="#tabs1"><span class="octicon octicon-diff-added"></span>Contributions</a>
                   </li>
-                  <li id="#tabs2"><span class="octicon octicon-repo"></span>Repositories
-                   <p>test</p>
+                  <li>
+                    <a class="button" href="#tabs2"><span class="octicon octicon-repo"></span>Repositories</a>
                   </li>
-                  <li id="#tabs3"><span class="octicon octicon-rss"></span>Public activity
-                   <p>test</p>
+                  <li>
+                    <a class="button" href="#tabs3"><span class="octicon octicon-rss"></span>Public activity</a>
                   </li>
              </ul>
-        </section>
-         <section class="main-column">
 
-         </section>
+         <section class="panels">
+          <div class="panel active" id="tabs1"><h3>Popular repositories</h3></div>
+          <div class="panel" id="tabs2">Wow look at me!</div>
+          <div class="panel" id="tabs3">No look at me!</div>
+        </section>
+        <section class="issues">
+          <span class="username" itemprop="username">{{user.login}}</span>
+          <span class="comment" itemprop="id">{{user.body}}</span>
+          <span class="comment" itemprop="id">{{user.body}}</span>
+          <span class="comment" itemprop="id">{{user.body}}</span>
        </section>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
+        <script src="/bower_components/angular/angular.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>

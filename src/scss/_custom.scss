@@ -1,48 +1,33 @@
+
+
 header {
  // border: 1px black solid;
- width: 90%;
- height: 75px;
+ max-width: 1140px;
+ margin: 0 auto;
+ height: 50px;
 }
 
 
 .container {
-  width: 90%;
-  height: 700px;
-  margin-left: 5%;
-  margin-right: 5%;
-  // border: 1px black solid;
+  max-width: 1140px;
+  margin: 0 auto;
+  box-sizing: border-box;
   font-family: sans-serif;
-  display: inline-block;
-  #tabs li {
-    border: 1px solid black;
-    padding: 4px;
-    display: inline;
-  }
 
-  #tabs {
-    vertical-align: top;
-    float:right;
-    width: 40%;
-    // border: 1px black solid;
-    display: inline;
-    margin-right: 300px;
-    margin-top: 50px;
-    list-style: none;
-
-  }
    .sidebar-colomn {
-    margin-top: 40px;
+    // margin-top: 40px;
     margin-left: 100px;
-    width: 275px;
+    width: 25%;
     height:500px;
     padding: 2px;
+    float: left;
     // border: 2px red solid;
-    display: inline-block;
+    display: block;
     font-family: sans-serif;
     font-size: 12px;
      div {
         margin-left: 22px;
-        margin-top: 10px;
+        // margin-top: 10px;
         border-radius: 6px;
         display: block;
      }
@@ -82,26 +67,47 @@ header {
                   padding-bottom: 5px;
                 }
     }
-
-               .main-column {
-                  border: 2px green solid;
-                  width: 700px;
-                  height:200px;
-                  float: right;
-                  vertical-align: top;
-                  display: inline-block;
-
-               }
 }
+      ul.tabs {
+          list-style: none;
+
+          padding-left: 5px;
+          margin-left: 33%;
+          width: 40%;
+          margin-right: 50px;
+          float: none;
+          display: block;
+          vertical-align: top;
+      }
+
+      ul.tabs li {
+          display: inline-block;
 
 
-		.tab-content.active{
-			display: block;
-		}
+      }
 
-		.tab-content.hide{
-			display: none;
-		}
-    .highlight {
-        background: grey;
+      ul.tabs li a.button {
+
+          margin-bottom: -1px;
+          border-bottom: 1px solid #bbb;
+          text-decoration: none;
+          padding: .4ex 1em;
+          padding-top: 2ex;
+      }
+
+      ul.tabs li a.active.button {
+
+          border: 1px solid #bbb;
+          border-bottom: none;
+
+
+
+      }
+
+      .panels .panel {
+          display: none;
+      }
+
+      .panels .panel.active {
+          display: block;
       }

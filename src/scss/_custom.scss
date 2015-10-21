@@ -99,9 +99,6 @@ header {
 
           border: 1px solid #bbb;
           border-bottom: none;
-
-
-
       }
 
       .panels .panel {
@@ -110,4 +107,18 @@ header {
 
       .panels .panel.active {
           display: block;
+      }
+
+      section .issues {
+        border: 2px solid grey;
+        border-radius: 5px;
+        width: 35%;
+        margin: 0 auto;
+        .comment {
+          display: block;
+          padding: 5px;
+        }
+        .username {
+          padding: 2px;
+        }
       }
